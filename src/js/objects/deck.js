@@ -1,5 +1,5 @@
 var React = require('react');
-var deckValues = require('json!../../decks/thrustjam1.json');
+//var deckValues = require('json!../../decks/thrustjam1.json');
 
 var Deck = React.createClass({
 
