@@ -1,0 +1,25 @@
+@import '../../bower_components/Materialize/dist/css/materialize.min.css';
+
+html, body, #main, #menu-wrapper, #game-wrapper{
+	height: 100%;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background: #000;
+	color: #fff;
+}
+
+#menu, #game {
+	width: 100%;
+}
+
+#menu ul li{
+	margin-bottom: 40px;
+}
+
+#btn-battle{
+	margin: 100px 0;
+}
+
