@@ -13,7 +13,7 @@ var Menu = React.createClass({
 							<img src="/assets/images/logo.png" />
 						</li>
 						<li>
-							<button className="btn waves-effect waves-light" onClick={this.startGame}>Start game</button>
+							<button id="btn-start" className="btn btn-large waves-effect waves-light purple" onClick={this.startGame}>Start game</button>
 						</li>
 					</ul>
 				</div>

@@ -7,7 +7,6 @@ var Deck = React.createClass({
         return {
         	deckName: 'thrustjam1',
         	cards: [],
-            cardCount: 0,
             currentCard: {
             	id: 0,
             	dmg: 0
@@ -25,6 +24,12 @@ var Deck = React.createClass({
 		this.getCards(this.setCards);
 	},
 
+	componentWillReceiveProps: function() {
+		this.setState({
+			currentCard: this.state.cards[this.props.currentRound]
+		});
+	},
+	
 	getCards: function (setCards) {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', '/assets/decks/' + this.state.deckName + '.json');
@@ -40,8 +45,7 @@ var Deck = React.createClass({
 	setCards: function(deckObject) {
 		var shuffledCards = this.shuffleCards(deckObject);
 		this.setState({
-			cards: shuffledCards,
-			currentCard: shuffledCards[this.state.cardCount]
+			cards: shuffledCards
 		});
  	},
 

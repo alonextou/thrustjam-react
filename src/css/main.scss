@@ -19,7 +19,45 @@ body {
 	margin-bottom: 40px;
 }
 
-#btn-battle{
-	margin: 100px 0;
+#btn-start{
+	color: #ffeb3b;
+	font-weight: bold;
+	letter-spacing: 2px;
 }
 
+#btn-battle{
+	margin: 60px 0;
+	border: none;
+	width: 100px;
+	height: 80px;
+	background: url('/assets/images/vs.jpg');
+	background-size: 100%;
+}
+
+#btn-battle:hover{
+	background: url('/assets/images/vshover.jpg');
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.player h4{
+	font-size: 18px;
+	color: #ffeb3b;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.player .progress{
+	margin-top: 10px;
+	height: 20px;
+}
+
+.player .chip{
+	color: #333;
+	font-weight: bold;
+}
+
+.progress .determinate{
+	background-color: #4CAF50;
+}
